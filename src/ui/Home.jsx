@@ -11,7 +11,7 @@ function Home() {
                     <h3 className="bottom-100 absolute text-6xl not-italic text-[#5271FF]">
                         I am James!
                     </h3>
-                    <h3 className="absolute bottom-20 text-6xl italic font-semibold underline text-[#9B4819]">
+                    <h3 className="absolute bottom-20 text-6xl font-semibold italic text-[#9B4819] underline">
                         Hire me
                     </h3>
                     <div className="absolute bottom-48 flex gap-4">
@@ -28,20 +28,14 @@ function Home() {
                             />
                         </Link>{' '}
                         <Link to="desmend2234@gmail.com">
-                            <img
-                                src="/assets/img/email.png"
-                                className="h-10"
-                            />
+                            <img src="/assets/img/email.png" className="h-10" />
                         </Link>
                     </div>{' '}
                     <Link
                         to="https://www.cakeresume.com/s--QW_Rta4jvL8LGLssoH14eA--/desmend2234"
                         className="absolute bottom-64"
                     >
-                        <img
-                            src="/assets/img/CakeResume.png"
-                            className="h-6"
-                        />
+                        <img src="/assets/img/CakeResume.png" className="h-6" />
                     </Link>
                 </div>
             </section>
