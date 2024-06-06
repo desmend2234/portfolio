@@ -16,16 +16,10 @@ function Home() {
                     </h3>
                     <div className="absolute bottom-48 flex gap-4">
                         <Link to="https://github.com/desmend2234">
-                            <img
-                                src="/github-mark.png"
-                                className="h-10"
-                            />
+                            <img src="/github-mark.png" className="h-10" />
                         </Link>
                         <Link to="https://www.linkedin.com/in/james-li-924ba071/">
-                            <img
-                                src="/linkedin.png"
-                                className="h-10"
-                            />
+                            <img src="/linkedin.png" className="h-10" />
                         </Link>{' '}
                         <Link to="desmend2234@gmail.com">
                             <img src="/email.png" className="h-10" />
