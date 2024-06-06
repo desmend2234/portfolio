@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import climbImage from '../assets/img/climb.jpg'
+import climbImage from '/assets/img/climb.jpg'
 function Home() {
     return (
         <div className="mx-0 w-screen px-0">
@@ -17,19 +17,19 @@ function Home() {
                     <div className="absolute bottom-48 flex gap-4">
                         <Link to="https://github.com/desmend2234">
                             <img
-                                src="./src/assets/img/github-mark.png"
+                                src="/assets/img/github-mark.png"
                                 className="h-10"
                             />
                         </Link>
                         <Link to="https://www.linkedin.com/in/james-li-924ba071/">
                             <img
-                                src="./src/assets/img/linkedin.png"
+                                src="/assets/img/linkedin.png"
                                 className="h-10"
                             />
                         </Link>{' '}
                         <Link to="desmend2234@gmail.com">
                             <img
-                                src="./src/assets/img/email.png"
+                                src="/assets/img/email.png"
                                 className="h-10"
                             />
                         </Link>
@@ -39,7 +39,7 @@ function Home() {
                         className="absolute bottom-64"
                     >
                         <img
-                            src="./src/assets/img/CakeResume.png"
+                            src="/assets/img/CakeResume.png"
                             className="h-6"
                         />
                     </Link>
@@ -209,7 +209,7 @@ function Home() {
                     </h1>
                     <div className="mx-4 gap-4 lg:flex">
                         <img
-                            src="./src/assets/img/project.png"
+                            src="/assets/img/project.png"
                             className="object-fit bg-cover bg-center lg:h-80"
                         />
                         <div className="my-4 flex-col text-wrap">
@@ -232,7 +232,7 @@ function Home() {
                                         className="flex gap-2"
                                     >
                                         <img
-                                            src="./src/assets/img/github-mark.png"
+                                            src="/assets/img/github-mark.png"
                                             className="object-fit h-6"
                                         />
                                         <p className="underline">Github page</p>
@@ -242,7 +242,7 @@ function Home() {
                                         className="flex gap-2"
                                     >
                                         <img
-                                            src="./src/assets/img/monitor.png"
+                                            src="/assets/img/monitor.png"
                                             className="object-fit h-6"
                                         />
                                         <p className="underline">
