@@ -3,7 +3,7 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         fontFamily: {
-            sans: 'Radley',
+            sans: 'Poppins',
         },
         extend: {
             screens: {

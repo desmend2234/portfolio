@@ -3,6 +3,8 @@ import Home from './src/ui/Home'
 import AppLayout from './src/ui/AppLayout'
 import About from './src/ui/About'
 import Portfolio from './src/ui/Portfolio'
+import Skill from './src/ui/Skill'
+import Contact from './src/ui/Contact'
 function App() {
     const router = createBrowserRouter([
         {
@@ -13,7 +15,9 @@ function App() {
                     element: <Home />,
                 },
                 { element: <About /> },
+                { element: <Skill /> },
                 { element: <Portfolio /> },
+                { element: <Contact /> },
             ],
         },
     ])

@@ -4,6 +4,8 @@ import { transition1 } from '../helpers/transitions'
 
 import About from './About'
 import Portfolio from './Portfolio'
+import Skill from './Skill'
+import Contact from './Contact'
 
 function Home() {
     const variants = {
@@ -38,11 +40,11 @@ function Home() {
     }
 
     return (
-        <div className=" w-full overflow-auto">
+        <div className="w-full overflow-auto" id='home'>
             <section id="home">
-                <div className="relative flex min-h-screen flex-col items-center justify-center">
+                <div className="relative flex min-h-screen flex-col items-center justify-center font-[Ridley]">
                     <motion.h1
-                        className="mb-4 text-8xl italic text-slate-700"
+                        className="mb-4 text-6xl italic text-slate-700"
                         variants={variants}
                         initial="initial"
                         // whileInView="animate"
@@ -51,7 +53,7 @@ function Home() {
                         Hello,
                     </motion.h1>
                     <motion.h3
-                        className="my-4 text-6xl not-italic text-slate-700"
+                        className="my-4 text-5xl not-italic text-slate-700"
                         variants={variants}
                         initial="initial"
                         animate="animate"
@@ -86,9 +88,9 @@ function Home() {
                         </button>
                     </motion.div>
 
-                    <div className="absolute bottom-28 flex gap-x-4 mx-auto xl:mx-0 ">
+                    <div className="absolute bottom-28 mx-auto flex gap-x-4 xl:mx-0">
                         <Link to="https://github.com/desmend2234">
-                            <img src="/github-mark.png" className="h-10 " />
+                            <img src="/github-mark.png" className="h-10" />
                         </Link>
                         <Link to="https://www.linkedin.com/in/james-li-924ba071/">
                             <img src="/linkedin.png" className="h-10" />
@@ -114,7 +116,9 @@ function Home() {
             </section>
             {/* <img src="/arrowtop.png" className='h-20 fixed bottom-20 right-10 ' /> */}
             <About />
+            <Skill />
             <Portfolio />
+            <Contact />
         </div>
     )
 }

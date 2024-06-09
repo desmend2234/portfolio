@@ -16,7 +16,7 @@ function MobileNav() {
         },
     }
     return (
-        <nav className="font-[Nunito] lg:hidden">
+        <nav className="lg:hidden">
             <div
                 onClick={() => setOpenMenu(true)}
                 className="absolute right-10 top-10 h-6 w-6 cursor-pointer"
@@ -32,13 +32,13 @@ function MobileNav() {
                 <div onClick={() => setOpenMenu(false)}>
                     <img
                         src="/cross.png"
-                        className="absolute left-4 top-4 z-30 h-6 w-6"
+                        className="absolute left-4 top-4 z-30 h-6 w-6 cursor-pointer"
                     />
                 </div>
 
-                <ul className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-y-8 font-bold md:gap-[4dvw]">
+                <ul className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-y-8 md:gap-[4dvw]">
                     <li>
-                        <HashLink to="/">Home</HashLink>
+                        <HashLink to="#home" smooth>Home</HashLink>
                     </li>
                     <li>
                         <HashLink to="#about" smooth>
