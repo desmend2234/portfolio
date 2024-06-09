@@ -2,8 +2,8 @@ import React from 'react'
 
 function Skill() {
     return (
-        <section className='mb-72'>
-            <div className="flex h-full flex-col items-center justify-center">
+        <section className="mt-20 h-full">
+            <div className="flex flex-col items-center justify-center">
                 <h3 className="text-base">Explore My</h3>
                 <h1 className="mb-12 text-[3rem] font-semibold">Skill</h1>
                 <div className="mx-4 gap-4">

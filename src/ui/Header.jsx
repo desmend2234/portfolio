@@ -8,12 +8,12 @@ function Header() {
             <div className="flex w-full flex-col justify-between  lg:flex-row lg:items-center">
                 <Link></Link>
                 <nav className="hidden gap-x-14 lg:flex">
-                    <Link
-                        to={'/'}
+                    <HashLink
+                        to='#home' smooth
                         className="text-[#696c6d] transition hover:text-stone-800"
                     >
                         Home
-                    </Link>{' '}
+                    </HashLink>{' '}
                     <HashLink
                         to="#about"
                         smooth
@@ -29,7 +29,7 @@ function Header() {
                         Portfolio
                     </HashLink>
                     <HashLink
-                        to={'/'}
+                        to='#contact'
                         smooth
                         className="text-[#696c6d] transition hover:text-stone-800"
                     >

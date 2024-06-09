@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Portfolio() {
     return (
-        <section id="portfolio" className="mb-40">
+        <section id="portfolio" className="py-80">
             <div className="flex h-full flex-col items-center">
                 <h1 className="mb-8 text-4xl font-semibold">Side project</h1>
                 <div className="mx-4 gap-4 lg:flex">

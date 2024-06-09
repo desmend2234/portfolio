@@ -6,6 +6,7 @@ import About from './About'
 import Portfolio from './Portfolio'
 import Skill from './Skill'
 import Contact from './Contact'
+import { HashLink } from 'react-router-hash-link'
 
 function Home() {
     const variants = {
@@ -40,7 +41,7 @@ function Home() {
     }
 
     return (
-        <div className="w-full overflow-auto" id='home'>
+        <div className="w-full overflow-auto" id="home">
             <section id="home">
                 <div className="relative flex min-h-screen flex-col items-center justify-center font-[Ridley]">
                     <motion.h1
@@ -78,7 +79,7 @@ function Home() {
                             type="button"
                             className="inline-block rounded-full border-[0.1rem] border-[#353535] bg-gray-200 px-10 py-2 font-semibold tracking-wide text-[#555555] transition duration-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring focus:ring-stone-300 focus:ring-offset-2 disabled:cursor-not-allowed lg:px-14 lg:py-4"
                         >
-                            Contact
+                            <HashLink to="#contact" smooth>Contact</HashLink>
                         </button>
                         <button
                             type="button"
