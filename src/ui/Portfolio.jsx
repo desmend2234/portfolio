@@ -25,7 +25,7 @@ function Portfolio() {
                             <li>AJAX後端API串接</li>
                             <div className="flex gap-8 py-4 text-2xl font-medium">
                                 <Link
-                                    to="https://github.com/desmend2234/react-redux-project"
+                                    to="https://github.com/desmend2234/travelsky"
                                     className="flex gap-2"
                                 >
                                     <img
@@ -35,7 +35,7 @@ function Portfolio() {
                                     <p className="underline">Github page</p>
                                 </Link>
                                 <Link
-                                    to="https://reactvite-new.vercel.app/"
+                                    to="https://travelsky.vercel.app/"
                                     className="flex gap-2"
                                 >
                                     <img

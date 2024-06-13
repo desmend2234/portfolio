@@ -115,7 +115,6 @@ function Home() {
                     </Link>
                 </div>
             </section>
-            {/* <img src="/arrowtop.png" className='h-20 fixed bottom-20 right-10 ' /> */}
             <About />
             <Skill />
             <Portfolio />
