@@ -1,6 +1,16 @@
 import React from 'react'
-
+import { animate, motion } from 'framer-motion'
+import  { frontSkillList, others } from './skillList'
 function Skill() {
+    const variants = {
+        initial: { opacity: 0, y: 100 },
+        animate: (index) => ({
+            opacity: 1,
+            y: 0,
+            transition: { delay: index * 0.1 },
+        }),
+    }
+
     return (
         <section className="mt-20 h-full">
             <div className="flex flex-col items-center justify-center">
@@ -12,36 +22,27 @@ function Skill() {
                             <h3 className="mx-6 text-3xl font-semibold">
                                 Frontend development
                             </h3>
-                            <ul className="grid grid-flow-col grid-rows-3 gap-4 text-left">
-                                <li className="flex gap-2">
-                                    <img src="/verify.png" className="h-6" />
-                                    <p>JavaScript ES6</p>
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    HTML5 / CSS3
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    Tailwind CSS
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    Bootstrap
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    SCSS
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    React / Redux Toolkit
-                                </li>
+                            <ul className="mx-4 grid grid-flow-col grid-rows-3 gap-4 text-left">
+                                {frontSkillList.map((skill, index) => {
+                                    return (
+                                        <motion.li
+                                            className="flex gap-2"
+                                            key={index}
+                                            variants={variants}
+                                            initial="initial"
+                                            whileInView="animate"
+                                            custom={index}
+                                        >
+                                            <img
+                                                src="/verify.png"
+                                                className="h-6"
+                                            />
+                                            <p>{skill.name}</p>
+                                        </motion.li>
+                                    )
+                                })}
+
+                              
                             </ul>
                         </div>
                         <div className="flex h-[24rem] flex-auto flex-col items-center justify-evenly rounded-[2rem] border-[0.1rem] border-gray-500 text-center">
@@ -49,26 +50,25 @@ function Skill() {
                                 Others
                             </h3>
                             <ul className="grid grid-flow-col grid-rows-3 gap-4 text-left">
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    Git
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    VS Code
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    Vite
-                                </li>
-                                <li className="flex gap-2">
-                                    {' '}
-                                    <img src="/verify.png" className="h-6" />
-                                    TOEIC 865分
-                                </li>
+                                {others.map((other, index) => {
+                                    return (
+                                        <motion.li
+                                            className="flex gap-2"
+                                            key={index}
+                                            variants={variants}
+                                            initial="initial"
+                                            whileInView="animate"
+                                            custom={index}
+                                        >
+                                            <img
+                                                src="/verify.png"
+                                                className="h-6"
+                                            />
+                                            <p>{other.name}</p>
+                                        </motion.li>
+                                    )
+                                })}
+                               
                             </ul>
                         </div>
                     </div>
