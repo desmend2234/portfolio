@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Portfolio() {
     return (
-        <section id="portfolio" className="py-80">
+        <section id="Side Project" className="py-80">
             <div className="flex h-full flex-col items-center">
+                <h3 className="text-base">About my</h3>
                 <h1 className="mb-8 text-4xl font-semibold">Side project</h1>
                 <div className="mx-4 gap-4 lg:flex">
                     <img
@@ -19,10 +20,13 @@ function Portfolio() {
                         <h2 className="my-4 text-xl font-semibold text-gray-800">
                             運用技術：
                         </h2>
-                        <ul className="max-w-md list-inside list-disc space-y-1 text-xl text-gray-600">
-                            <li>HTML / CSS / Tailwind CSS / JavaScript(ES6)</li>
-                            <li>React / React Router / Vite</li>
+                        <ul className="w-full list-inside list-disc space-y-1 text-xl text-gray-600">
+                            <li>HTML / CSS / Tailwind CSS 版面UIUX設計</li>
+                            <li>JavaScript 開發</li>
+                            <li>React / React Router 框架及路由運用</li>
+                            <li>Framer / Swiper動畫運用</li>
                             <li>AJAX後端API串接</li>
+
                             <div className="flex gap-8 py-4 text-2xl font-medium">
                                 <Link
                                     to="https://github.com/desmend2234/travelsky"

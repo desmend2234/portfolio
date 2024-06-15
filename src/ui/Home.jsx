@@ -61,14 +61,14 @@ function Home() {
                     >
                         I am James Li!{' '}
                     </motion.h3>
-                    <motion.h3
+                    {/* <motion.h3
                         className="my-6 flex justify-center text-6xl font-semibold italic text-[#9B4819] underline"
                         variants={variants}
                         initial="initial"
                         animate="animate"
                     >
                         Hire me
-                    </motion.h3>
+                    </motion.h3> */}
                     <motion.div
                         className="my-8 flex items-center justify-center gap-4 font-[Poppins] text-sm lg:text-xl"
                         variants={variants}
@@ -79,13 +79,17 @@ function Home() {
                             type="button"
                             className="inline-block rounded-full border-[0.1rem] border-[#353535] bg-gray-200 px-10 py-2 font-semibold tracking-wide text-[#555555] transition duration-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring focus:ring-stone-300 focus:ring-offset-2 disabled:cursor-not-allowed lg:px-14 lg:py-4"
                         >
-                            <HashLink to="#contact" smooth>Contact</HashLink>
+                            <HashLink to="#contact" smooth>
+                                Contact
+                            </HashLink>
                         </button>
                         <button
                             type="button"
                             className="inline-block rounded-full bg-gray-700 px-4 py-2 font-semibold tracking-wide text-white transition duration-300 hover:bg-stone-800 hover:text-white focus:outline-none focus:ring focus:ring-stone-300 focus:ring-offset-2 disabled:cursor-not-allowed lg:px-6 lg:py-4"
                         >
-                            Download CV
+                            <Link to="https://www.cakeresume.com/desmend2234">
+                                Download CV
+                            </Link>
                         </button>
                     </motion.div>
 

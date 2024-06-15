@@ -38,7 +38,9 @@ function MobileNav() {
 
                 <ul className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-y-8 md:gap-[4dvw]">
                     <li>
-                        <HashLink to="#home" smooth>Home</HashLink>
+                        <HashLink to="#home" smooth>
+                            Home
+                        </HashLink>
                     </li>
                     <li>
                         <HashLink to="#about" smooth>
@@ -46,8 +48,8 @@ function MobileNav() {
                         </HashLink>
                     </li>
                     <li>
-                        <HashLink to="#portfolio" smooth>
-                            Portfolio
+                        <HashLink to="#Side Project" smooth>
+                            Side Project
                         </HashLink>
                     </li>
                     <li>

@@ -4,12 +4,13 @@ import MobileNav from './MobileNav'
 import { HashLink } from 'react-router-hash-link'
 function Header() {
     return (
-        <header className="fixed z-40 flex min-h-[10dvh] w-full items-center bg-sky-200 px-[30px]  text-xl lg:px-[10vw] shadow-sm">
-            <div className="flex w-full flex-col justify-between  lg:flex-row lg:items-center">
+        <header className="fixed z-40 flex min-h-[10dvh] w-full items-center bg-sky-200 px-[30px] text-xl shadow-sm lg:px-[10vw]">
+            <div className="flex w-full flex-col justify-between lg:flex-row lg:items-center">
                 <Link></Link>
                 <nav className="hidden gap-x-14 lg:flex">
                     <HashLink
-                        to='#home' smooth
+                        to="#home"
+                        smooth
                         className="text-[#696c6d] transition hover:text-stone-800"
                     >
                         Home
@@ -22,14 +23,14 @@ function Header() {
                         About
                     </HashLink>
                     <HashLink
-                        to="#portfolio"
+                        to="#Side Project"
                         smooth
                         className="text-[#696c6d] transition hover:text-stone-800"
                     >
-                        Portfolio
+                        Side Project
                     </HashLink>
                     <HashLink
-                        to='#contact'
+                        to="#contact"
                         smooth
                         className="text-[#696c6d] transition hover:text-stone-800"
                     >
