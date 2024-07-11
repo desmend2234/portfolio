@@ -41,9 +41,9 @@ function Home() {
     }
 
     return (
-        <div className="w-full overflow-auto" id="home">
-            <section id="home">
-                <div className="relative flex min-h-screen flex-col items-center justify-center font-[Ridley]">
+        <div className="w-full" id="home">
+            <section id="home" className='flex flex-col ' >
+                <div className="flex h-[70dvh] justify-center md:h-screen flex-col items-center font-[Ridley] gap-y-2 ">
                     <motion.h1
                         className="mb-4 text-6xl italic text-slate-700"
                         variants={variants}
@@ -61,14 +61,7 @@ function Home() {
                     >
                         I am James Li!{' '}
                     </motion.h3>
-                    {/* <motion.h3
-                        className="my-6 flex justify-center text-6xl font-semibold italic text-[#9B4819] underline"
-                        variants={variants}
-                        initial="initial"
-                        animate="animate"
-                    >
-                        Hire me
-                    </motion.h3> */}
+
                     <motion.div
                         className="my-8 flex items-center justify-center gap-4 font-[Poppins] text-sm lg:text-xl"
                         variants={variants}
@@ -92,8 +85,7 @@ function Home() {
                             </Link>
                         </button>
                     </motion.div>
-
-                    <div className="absolute bottom-28 mx-auto flex gap-x-4 xl:mx-0">
+                    <div className="mx-auto flex gap-4 xl:mx-0">
                         <Link to="https://github.com/desmend2234">
                             <img src="/github-mark.png" className="h-10" />
                         </Link>
@@ -104,19 +96,18 @@ function Home() {
                             <img src="/email.png" className="h-10" />
                         </Link>
                     </div>
-
+                    <Link
+                        to="https://www.cakeresume.com/s--QW_Rta4jvL8LGLssoH14eA--/desmend2234"
+                        className=" "
+                    >
+                        <img src="/CakeResume.png" className="h-6" />
+                    </Link>
                     <motion.img
                         src="/arrow.png"
                         variants={variants}
                         animate="scrollButton"
-                        className="absolute bottom-14 h-6 w-6"
+                        className="bottom-6 h-6 w-6"
                     />
-                    <Link
-                        to="https://www.cakeresume.com/s--QW_Rta4jvL8LGLssoH14eA--/desmend2234"
-                        className="absolute bottom-44"
-                    >
-                        <img src="/CakeResume.png" className="h-6" />
-                    </Link>
                 </div>
             </section>
             <About />

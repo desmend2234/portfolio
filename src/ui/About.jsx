@@ -210,7 +210,7 @@ function About() {
         //         </div>
         //     </div>
         // </section>
-        <section className="pt-96 h-full" id='about'>
+        <section className="pt-48 max-h-full" id='about'>
             <div className="container mx-auto flex  flex-col items-center justify-center gap-4">
                 <h3 className="text-base">Get To Know More</h3>
                 <h1 className="mb-12 text-[3rem] font-semibold">About me</h1>

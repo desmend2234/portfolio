@@ -16,11 +16,11 @@ function MobileNav() {
         },
     }
     return (
-        <nav className="lg:hidden">
+        <nav className=" lg:hidden flex justify-end px-4">
             <div
                 // onClick={() => setOpenMenu(true)}
                 // className="absolute right-10 top-10 h-6 w-6 cursor-pointer"
-                className="absolute right-10 top-10 z-30 flex cursor-pointer flex-col gap-[4.5px]"
+                className=" z-30 flex cursor-pointer items-center  flex-col gap-[4.5px]"
                 onClick={() => setOpenMenu((openMenu) => !openMenu)}
             >
                 <div
