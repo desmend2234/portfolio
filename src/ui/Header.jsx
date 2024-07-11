@@ -4,7 +4,7 @@ import MobileNav from './MobileNav'
 import { HashLink } from 'react-router-hash-link'
 function Header() {
     return (
-        <header className=" fixed z-40 flex h-20 w-full items-center bg-sky-200  text-xl shadow-sm px-4">
+        <header className="fixed z-40 flex h-20 w-full items-center bg-sky-200 px-4 text-xl shadow-sm">
             <div className="flex w-full flex-col justify-between lg:flex-row lg:items-center">
                 <Link></Link>
                 <nav className="hidden gap-x-14 lg:flex">

@@ -42,8 +42,8 @@ function Home() {
 
     return (
         <div className="w-full" id="home">
-            <section id="home" className='flex flex-col ' >
-                <div className="flex h-[70dvh] justify-center md:h-screen flex-col items-center font-[Ridley] gap-y-2 ">
+            <section id="home" className=' flex flex-col ' >
+                <div className="flex h-[70dvh] mt-36 justify-center md:h-screen flex-col items-center font-[Ridley] gap-y-2 ">
                     <motion.h1
                         className="mb-4 text-6xl italic text-slate-700"
                         variants={variants}
