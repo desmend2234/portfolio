@@ -1,7 +1,19 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+
 import eslint from 'vite-plugin-eslint'
+
 export default defineConfig({
-    base: '/',
-    plugins: [react(), eslint()],
+    plugins: [
+        react(),
+        eslint({
+            include: [
+                'src/**/*.js',
+                'src/**/*.jsx',
+                'src/**/*.ts',
+                'src/**/*.tsx',
+            ],
+            exclude: [/virtual:/, /node_modules/],
+        }),
+    ],
 })
