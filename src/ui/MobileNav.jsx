@@ -21,20 +21,20 @@ function MobileNav() {
                 onClick={() => setOpenMenu((openMenu) => !openMenu)}
             >
                 <div
-                    className={`h-1 w-6 rounded-sm bg-gray-500 ${openMenu ? 'rotate-45' : ''} origin-left duration-500 ease-in-out`}
+                    className={`h-1 w-6 rounded-sm bg-gray-100 ${openMenu ? 'rotate-45' : ''} origin-left duration-500 ease-in-out`}
                 ></div>
                 <div
-                    className={`h-1 w-6 rounded-sm bg-gray-500 ${openMenu ? 'opacity-0' : ''} duration-500 ease-in-out`}
+                    className={`h-1 w-6 rounded-sm bg-gray-100 ${openMenu ? 'opacity-0' : ''} duration-500 ease-in-out`}
                 ></div>
                 <div
-                    className={`h-1 w-6 rounded-sm bg-gray-500 ${openMenu ? '-rotate-45' : ''} origin-left duration-500 ease-in-out`}
+                    className={`h-1 w-6 rounded-sm bg-gray-100 ${openMenu ? '-rotate-45' : ''} origin-left duration-500 ease-in-out`}
                 ></div>
             </div>
             <motion.div
                 variants={menuVariants}
                 initial="hidden"
                 animate={openMenu ? 'show' : ''}
-                className="absolute right-0 top-0 z-20 min-h-[40dvh] w-full max-w-xs bg-white text-xl shadow-2xl"
+                className="absolute right-0 top-0 z-20 min-h-[40dvh] w-full max-w-xs bg-gray-800 text-xl text-white shadow-2xl"
             >
                 <ul className="absolute top-0 flex h-full w-full flex-col items-center justify-center gap-y-8 md:gap-[4dvw]">
                     <li>
