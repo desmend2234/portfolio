@@ -18,7 +18,10 @@ export const frontSkillList = [
         name: 'React / Redux Toolkit',
     },
     {
-        name: 'JavaScript ES6',
+        name: 'TypeScript',
+    },
+    {
+        name: 'Next.js',
     },
 ]
 

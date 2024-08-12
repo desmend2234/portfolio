@@ -103,6 +103,100 @@ function Portfolio() {
                         </ul>
                     </div>
                 </div>
+                <div className="mx-4 max-w-6xl gap-4 lg:flex">
+                    <img
+                        src="/project3.png"
+                        className="object-fit bg-cover bg-center lg:h-80"
+                    />
+                    <div className="flex-col">
+                        <h3 className="text-pretty text-xl font-medium leading-8 tracking-wide">
+                            TravelTutor
+                            是一個創新的AI旅遊規劃平台，旨在透過先進的技術為使用者提供個性化的旅行建議和交通資訊。使用者只需登入網站，輸入起點和終點，即可在幾分鐘內獲得詳細的每日旅遊計劃，包含最佳交通路線、推薦景點及附近的飯店選擇。
+                        </h3>
+
+                        <h2 className="my-4 text-xl font-semibold text-gray-800">
+                            運用技術：
+                        </h2>
+                        <ul className="w-full list-inside list-disc space-y-1 text-xl text-gray-600">
+                            <li>
+                                Next.js, React.js, Tailwind CSS, Shadcn UI,
+                                Aceternity UI
+                            </li>
+
+                            <li>
+                                Google Places API（地圖與圖片查找）、Google
+                                AI（智能推薦）
+                            </li>
+                            <li>Next框架及App router路由運用</li>
+                            <li>Clerk auth登入驗證功能</li>
+                            <li>Firebase資料庫儲存</li>
+                            <li>Typescript型別檢查</li>
+                            <div className="flex gap-8 py-4 text-2xl font-medium">
+                                <Link
+                                    to="https://ai-travel-planner-r5i3.vercel.app/"
+                                    className="flex gap-2"
+                                >
+                                    <img
+                                        src="/monitor.png"
+                                        className="object-fit h-6"
+                                    />
+                                    <p className="underline">Demo website</p>
+                                </Link>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div className="mx-4 max-w-6xl gap-4 lg:flex">
+                    <img
+                        src="/project4.png"
+                        className="object-fit bg-cover bg-center lg:h-80"
+                    />
+                    <div className="flex-col">
+                        <h3 className="text-pretty text-xl font-medium leading-8 tracking-wide">
+                            浪浪認養資訊平台是一個創新的網站，旨在幫助使用者了解可供認養的流浪動物資訊。透過這個平台，使用者可以輕鬆查詢各種流浪動物的詳細資料，包括它們的種類、性別、年齡及所在地點，從而促進動物的認養與關懷。
+                            本平台運用最新的技術架構，採用 Next.js 和 React
+                            進行前端開發，提供流暢的使用者體驗。使用 Tailwind
+                            CSS
+                            進行樣式設計，確保界面美觀且易於操作。此外，平台整合了
+                            Kinde.Auth 進行安全的用戶身份驗證，並使用 Shadcn UI
+                            提供現代化的組件，提升整體使用體驗。
+                            無論是希望認養新寵物的家庭，還是關心流浪動物的愛心人士，浪浪認養資訊平台都將成為他們的最佳選擇，讓每一隻流浪動物都能找到溫暖的家。
+                        </h3>
+
+                        <h2 className="my-4 text-xl font-semibold text-gray-800">
+                            運用技術：
+                        </h2>
+                        <ul className="w-full list-inside list-disc space-y-1 text-xl text-gray-600">
+                            <li>Next.js, React.js, Tailwind CSS, Shadcn UI</li>
+                            <li>Next框架及App router路由運用</li>
+                            <li>Kindle.auth登入驗證功能</li>
+                            <li>Typescript型別檢查</li>
+
+                            <div className="flex gap-8 py-4 text-2xl font-medium">
+                                <Link
+                                    to="https://github.com/desmend2234/stray-animals-home"
+                                    className="flex gap-2"
+                                >
+                                    <img
+                                        src="/github-mark.png"
+                                        className="object-fit h-6"
+                                    />
+                                    <p className="underline">Github page</p>
+                                </Link>
+                                <Link
+                                    to="https://stray-animals-home.vercel.app/"
+                                    className="flex gap-2"
+                                >
+                                    <img
+                                        src="/monitor.png"
+                                        className="object-fit h-6"
+                                    />
+                                    <p className="underline">Demo website</p>
+                                </Link>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     )
