@@ -19,23 +19,17 @@ function MobileNav() {
     return (
         <nav className="flex justify-end px-4 lg:hidden">
             <div
-                className="z-50 flex cursor-pointer flex-col items-center gap-[4.5px]"
+                className="z-50 flex h-12 w-12 cursor-pointer flex-col items-center justify-center"
                 onClick={() => setOpenMenu((openMenu) => !openMenu)}
             >
                 <div
-                    className={`h-[2px] w-6 bg-gray-800 ${
-                        openMenu ? 'rotate-45' : ''
-                    } origin-left transition-all duration-300 ease-in-out`}
+                    className={`absolute h-0.5 w-5 bg-gray-800 transition-all duration-300 ease-in-out ${openMenu ? 'translate-y-0 rotate-45' : '-translate-y-1.5'}`}
                 ></div>
                 <div
-                    className={`h-[2px] w-6 bg-gray-800 ${
-                        openMenu ? 'opacity-0' : ''
-                    } transition-all duration-300 ease-in-out`}
+                    className={`absolute h-0.5 w-5 bg-gray-800 transition-all duration-300 ease-in-out ${openMenu ? 'opacity-0' : ''}`}
                 ></div>
                 <div
-                    className={`h-[2px] w-6 bg-gray-800 ${
-                        openMenu ? '-rotate-45' : ''
-                    } origin-left transition-all duration-300 ease-in-out`}
+                    className={`absolute h-0.5 w-5 bg-gray-800 transition-all duration-300 ease-in-out ${openMenu ? 'translate-y-0 -rotate-45' : 'translate-y-1.5'}`}
                 ></div>
             </div>
             <motion.div

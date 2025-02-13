@@ -4,37 +4,37 @@ import { motion } from 'framer-motion'
 
 function Portfolio() {
     const projectList = [
-        {
-            title: '旅遊電商網站',
-            description:
-                '此專案為旅遊電商網站，運用React串接後端API，使用者可以瀏覽商品詳細資訊，並將商品新增至購物車，也能搜尋商品並下訂單。',
-            image: '/project.png',
-            skills: [
-                'HTML / CSS / Tailwind CSS 版面UIUX設計',
-                'JavaScript 開發',
-                'React / React Router 框架及路由運用',
-                'Framer / Swiper動畫運用',
-                'AJAX後端API串接',
-            ],
-            github: 'https://github.com/desmend2234/travelsky',
-            demo: 'https://travelsky.vercel.app/',
-        },
-        {
-            title: 'Full Stack視訊網站',
-            description:
-                '此專案為Full Stack視訊網站，運用Next框架及第三方ZEGOCLOUD套件構建功能，畫面採用hover UI及Tailwind CSS修改，透過Clerk auth進行登入驗證，資料庫選擇MongoDB進行使用者資料儲存，使用者可以進行登入創建視訊聊天室與朋友共同視訊，並可在視訊頁面進行即時對話。',
-            image: '/project2.png',
-            skills: [
-                'HTML / CSS / Tailwind CSS / hover UI版面UIUX設計',
-                'JavaScript開發',
-                'ZEGOCLOUD套件開發視訊功能',
-                'Next框架及App router路由運用',
-                'Clerk auth登入驗證功能',
-                'MongoDB資料庫儲存',
-            ],
-            github: 'https://github.com/desmend2234/videoconcall',
-            demo: 'https://videoconcall.vercel.app/',
-        },
+        // {
+        //     title: '旅遊電商網站',
+        //     description:
+        //         '此專案為旅遊電商網站，運用React串接後端API，使用者可以瀏覽商品詳細資訊，並將商品新增至購物車，也能搜尋商品並下訂單。',
+        //     image: '/project.png',
+        //     skills: [
+        //         'HTML / CSS / Tailwind CSS 版面UIUX設計',
+        //         'JavaScript 開發',
+        //         'React / React Router 框架及路由運用',
+        //         'Framer / Swiper動畫運用',
+        //         'AJAX後端API串接',
+        //     ],
+        //     github: 'https://github.com/desmend2234/travelsky',
+        //     demo: 'https://travelsky.vercel.app/',
+        // },
+        // {
+        //     title: 'Full Stack視訊網站',
+        //     description:
+        //         '此專案為Full Stack視訊網站，運用Next框架及第三方ZEGOCLOUD套件構建功能，畫面採用hover UI及Tailwind CSS修改，透過Clerk auth進行登入驗證，資料庫選擇MongoDB進行使用者資料儲存，使用者可以進行登入創建視訊聊天室與朋友共同視訊，並可在視訊頁面進行即時對話。',
+        //     image: '/project2.png',
+        //     skills: [
+        //         'HTML / CSS / Tailwind CSS / hover UI版面UIUX設計',
+        //         'JavaScript開發',
+        //         'ZEGOCLOUD套件開發視訊功能',
+        //         'Next框架及App router路由運用',
+        //         'Clerk auth登入驗證功能',
+        //         'MongoDB資料庫儲存',
+        //     ],
+        //     github: 'https://github.com/desmend2234/videoconcall',
+        //     demo: 'https://videoconcall.vercel.app/',
+        // },
         {
             title: 'TravelTutor',
             description:
@@ -54,7 +54,7 @@ function Portfolio() {
         {
             title: '浪浪認養資訊平台',
             description:
-                '浪浪認養資訊平台是一個創新的網站，旨在幫助使用者了解可供認養的流浪動物資訊。透過這個平台，使用者可以輕鬆查詢各種流浪動物的詳細資料，包括它們的種類、性別、年齡及所在地點，從而促進動物的認養與關懷。本平台運用最新的技術架構，採用 Next.js 和 React 進行前端開發，提供流暢的使用者體驗。使用 Tailwind CSS 進行樣式設計，確保界面美觀且易於操作。此外，平台整合了 Kinde.Auth 進行安全的用戶身份驗證，並使用 Shadcn UI 提供現代化的組件，提升整體使用體驗。無論是希望認養新寵物的家庭，還是關心流浪動物的愛心人士，浪浪認養資訊平台都將成為他們的最佳選擇，讓每一隻流浪動物都能找到溫暖的家。',
+                '浪浪認養資訊平台是一個幫助使用者了解流浪動物資訊的網站。使用者可以查詢動物的種類、性別、年齡及所在地點，促進動物認養。平台採用 Next.js 和 React 開發，整合 Kinde.Auth 驗證功能，並使用 Shadcn UI 提供現代化的使用者介面。',
             image: '/project4.png',
             skills: [
                 'Next.js, React.js, Tailwind CSS, Shadcn UI',
